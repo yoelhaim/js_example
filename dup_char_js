@@ -1,0 +1,11 @@
+function dupChar(str)
+{
+	for(let i = 0; str[i]; i++)
+	{
+		let len =  str[i].toLowerCase().charCodeAt(0) - 96;
+		
+		 while(len-- >0)
+		 	process.stdout.write(str[i]);
+	}
+}
+dupChar("aBcAZ");
